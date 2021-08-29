@@ -1,5 +1,5 @@
 class Plane{
-    constructor(x,y){
+    constructor(x,y,width,height){
         var options={
             isStatic: true
                };
@@ -12,7 +12,7 @@ class Plane{
     display(){
         var pos = this.body.position;
         rectMode(CENTER);
-        fill("brown");
+        fill("red");
         rect(0,0,this.width,this.height);
     }   
 }

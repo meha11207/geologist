@@ -1,9 +1,9 @@
 class Sand{
     constructor(x,y,r){
         var options={
-            'density': 0.3 ,
+            'density': 1,
             'friction':5 ,
-            'resititution': 1
+            'resititution': 0.3
                };
     this.x=x;
     this.y=y
@@ -14,11 +14,10 @@ class Sand{
     }
 
     display(){
-        var pos = this.body.position
+        var sandpos = this.body.position
         push();
-        translate(pos.x,pos.y);
+        translate(sandpos.x,sandpos.y);
         rectMode(CENTER);
-       
         stroke("white");
         fill("orange");
         ellipse(0,0,this.r,this.r);

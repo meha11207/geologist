@@ -19,11 +19,10 @@ class Hammer{
         push();
         translate(pos.x,pos.y);
         rotate(angle);
-        
         stroke("white");
         fill("orange");
         rectMode(CENTER);
         rect(0,0,this.width,this.height);
         pop();
-    }   
+    }  
 }

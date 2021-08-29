@@ -1,9 +1,9 @@
 class Rubber{
     constructor(x,y,r){
         var options={
-            'density': 0.3 ,
+            'density': 1 ,
             'friction':5 ,
-            'resititution': 1
+            'resititution': 0.3
                };
     this.x=x;
     this.y=y
@@ -18,9 +18,8 @@ class Rubber{
         push();
         translate(rubberpos.x,rubberpos.y);
         rectMode(CENTER);
-        
         stroke("white");
-        fill("orange");
+        fill("darkblue");
         ellipse(0,0,this.r,this.r);
         pop();
     }   
